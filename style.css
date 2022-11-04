@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-size: cover;
+
+  background-image: url(Images/Body_background_design_2.jpg);
+}
+
+.navigation {
+  float: right;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+
+.navigation a {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(234, 124, 7);
+  text-decoration: none;
+  border: 2px solid rgb(201, 18, 218);
+  padding: 10px;
+  margin: 5px;
+}
+
+.navigation a:hover {
+  background-color: rgb(161, 154, 192);
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Aside */
+.side {
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 100px;
+  width: 50%;
+  float: left;
+}
+
+.side h3 {
+  margin-bottom: 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column h1 {
+  flex: 50%;
+  padding: 0 1px;
+  margin-left: 1px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: brown;
+}
+
+.column #ProfileImage {
+  margin-top: 4px;
+  vertical-align: middle;
+  border-radius: 50%;
+  border-color: brown;
+  max-width: 50rem;
+  max-height: 30rem;
+  border: 0.5rem solid rgba(255, 255, 255, 0.2);
+}
+
+#textright {
+  color: darkblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  float: right;
+  width: 500px;
+  height: 300px;
+  /* border: 10px solid burlywood; */
+  margin-top: 50px;
+  margin-right: 40px;
+}
+
+/* .sidebar h4 {
+    margin-bottom: 100px;
+    margin-top: 50px;
+
+} */
+footer {
+  background-image: url(/Images/360_F_268488616_wcoB2JnGbOD2u3bpn2GPmu0KJQ4Ah66T.jpg);
+  color: white;
+  height: 6em;
+  margin-top: 58%;
+  text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 60px;
+  text-decoration: none;
+  margin: 5px 80px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* Linkedin */
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
